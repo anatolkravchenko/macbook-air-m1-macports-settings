@@ -1,0 +1,22 @@
+# WARNING! ANY CHANGES TO THIS FILE WILL BE LOST ON UNINSTALL/UPGRADES!
+# Make your changes to /opt/local/etc/mysql57/my.cnf
+# YOU HAVE BEEN WARNED!
+
+# MacPorts default options
+[mysqld]
+# skip-networking so multiple mysql server ports can be loaded
+# without each competing for port 3306.
+#skip-networking
+
+max_allowed_packet=1G
+max_heap_table_size=5G
+tmp_table_size=5G
+
+innodb_data_file_path=ibdata1:10M:autoextend:max:10000M
+innodb_file_per_table=1
+
+innodb_buffer_pool_size=5G
+
+bind-address=127.0.0.1
+
+port=3307

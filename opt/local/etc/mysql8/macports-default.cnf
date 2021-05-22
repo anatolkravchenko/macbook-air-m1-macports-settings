@@ -1,0 +1,14 @@
+# WARNING! ANY CHANGES TO THIS FILE WILL BE LOST ON UNINSTALL/UPGRADES!
+# Make your changes to /opt/local/etc/mysql8/my.cnf
+# YOU HAVE BEEN WARNED!
+
+# MacPorts default options
+[mysqld]
+basedir="/opt/local"
+
+# skip-networking so multiple mysql server ports can be loaded
+# without each competing for port 3306.
+#skip-networking
+
+
+port=3308
